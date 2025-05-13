@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+body{
+    background-color: #E7E7E7;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NavBar */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100vw;
+    height: 4rem;
+    background-color: #5f941a00;
+}
+
+nav img{
+    width: 100%;
+    height: 100%;
+    margin-left: -60%;
+}
+
+nav a{
+    margin-right: 1%;
+    width: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+nav a:hover{
+    transition: 0.2s;
+    color: #60941A;
+}
+
+/* Conteúdo */
+.main{
+    background-color: white;
+}
+
+.container{
+    background-color: white;
+    width: 900px;
+    max-width:  100%;
+    margin: 10vh auto ;
+    border-radius: 10px;
+}
+
+.detalhes{
+    margin: 5% 3%;
+}
+
+.nome{
+    color: #60941A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Form Avaliação */
+form{
+    margin: 1vh auto;
+    text-align: center;
+}
+
+form input{
+    margin-top: -1vh;
+    background-color: #60941A;
+    border: #60941A;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1vh;
+    font-weight:600;
+    transition: all 0.5s;
+}
+
+form input:hover{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    color: #60941A;
+    padding: 1vh;
+    font-weight:600 ;
+    transition: all 0.5s;
+}
+
+/* Estrelas */
+:root {
+    --amarelo: #ffcc00;
+    --cinza: #cccccc;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.opcao.fa:before {
+    content: '\f005';
+    color: var(--amarelo);
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: var(--cinza);
+}
+
+.estrela-preenchida {
+    color: var(--amarelo);
+}
+
+.estrela-vazia{
+    color: var(--cinza);
+}
+
+.avaliacao{
+    margin-top: -2vh;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.avaliacao button{    
+    background-color: #60941A;
+    border: #60941A;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1vh;
+    font-weight:600 ;
+    text-decoration: none;
+}
+
+.avaliacao button:hover{    
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    color: #60941A;
+    padding: 1vh;
+    font-weight:600 ;
+    transition: all 0.5s;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #60941A;
+    text-align: center;
+    height: 7vh;
+    bottom:0;
+    margin: auto auto;
+    width: 100%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PaginaDispositivo.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/cobra.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Fortech</title>
+</head>
+<body>
+
+    <nav>
+        <a href="PrimeiraPagina.html"><img src="./img/logoo.png" alt=""></a>
+        <a href="PaginaDispositivo.html">Catálogo de Dispositivos</a>
+        <a href="PaginaLixoEletronico.html">Pontos de Coleta</a>
+        <a href="PaginaPerfil.php">Perfil</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Encontre seu dispositivo!</h1>
+            <form class="filter">
+
+                <div class="item full-width">
+                    <label for="">Nome do Dispositivo</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="item">
+                    <label for="">Dispositivos</label>
+                    <select name="dispositivos">
+                        <option value=""></option>
+                        <option value="celular">Celular</option>
+                        <option value="notebook">Notebook</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="">Categoria</label>
+                    <select name="categoria">
+                        <option value=""></option>
+                        <option value="basico">Básico</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                    <div class="informacao">
+                        <button id="myBtn" onclick="modal.showModal()">Clique para entender sobre as categorias</button>
+                        <dialog id="modal">
+                            <li>Na categoria “básico” estão os aparelhos que não necessitam de grande capacidade de processamento. Ideal para uso cotidiano/doméstico (redes sociais, pesquisas, entretenimento, comunicação, anotações, etc.), todas atividades que não exigem aplicativos pesados ou desempenho específico. Não indicado em caso de necessidade de execução de muitas tarefas ao mesmo tempo, jogos, faculdade ou trabalho que exijam muitos aplicativos, capacidade de armazenamento e velocidade na realização de tarefas. O foco maior nessa categoria, além dos preços acessíveis, será a vida útil da bateria e a resolução da tela, a fim de oferecer maior conforto aos usuários.</li>
+                            <li>A categoria “intermediário” engloba aparelhos que necessitam de uma maior capacidade de processamento em relação ao “básico“. Indicado para estudos e trabalhos que envolvam o uso de aplicativos mais leves (trabalhos corporativos e uso em faculdade), necessidade de maior armazenamento, execução de multitarefas, jogos leves, acesso a multimídias e uso cotidiano. Não indicado para trabalhos e estudos que exigem grande desempenho gráfico e aplicativos pesados (designers e editores por exemplo) e jogos. O foco dessa categoria, além do custo benefício, é o processador, memória RAM e disco rígido, para computadores, e processamento, câmera e armazenamento, para celulares.</li>
+                            <li>A categoria “avançado” inclui aparelhos de alta performance e grande capacidade de processamento. Indicado apenas para funções específicas, como foco em uso para jogos, que exigem muito dos componentes do dispositivo, ou uso profissional específico, que exijam alta performance (da câmera, unidades gráficas do aparelho, tela, entre outros.). Possuem preços elevados, portanto, não são indicados em caso de usos mais simples e menos específicos. O foco dessa categoria é a unidade de processamento, potência do SSD, memória RAM e placa de vídeo dedicada, nos computadores, e eficiência da câmera e processador, sistema operacional e armazenamento, nos celulares.</li>
+                            <button class="close" onclick="modal.close()">Fechar</button>
+                        </dialog>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <label for="">Marca</label>
+                    <select name="marca">
+                        <option value=""></option>
+                        <option value="apple">Apple</option>
+                        <option value="asus">Asus</option>
+                        <option value="acer'">Acer</option>
+                        <option value="realme">Realme</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="lenovo">Lenovo</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="xiaomi">Xiaomi</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="">Preço Mínimo</label>
+                    <input type="number" name="minPrice">
+                </div>
+
+                <div class="item">
+                    <label for="">Preço Máximo</label>
+                    <input type="number" name="maxPrice">
+                </div>
+                
+                <div class="item submit">
+                    <button>Pesquisar</button>
+                </div>
+            </form>
+
+            <div class="countResults">
+                <p>Encontrado <b id="count"></b> Resultados</p>
+            </div>
+            <div id="list">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 - Direitos Reservados - Fortech</p>
+    </footer>
+
+    <script src="./js/DispositivoScript.js"></script>
+</body>
+</html>

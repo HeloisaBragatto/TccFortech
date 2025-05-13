@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+body{
+    background-color: #E7E7E7;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NavBar */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100vw;
+    height: 4rem;
+    background-color: #5f941a00;
+}
+
+nav img{
+    width: 100%;
+    height: 100%;
+    margin-left: -60%;
+}
+
+nav a{
+    margin-right: 1%;
+    width: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+nav a:hover{
+    transition: 0.2s;
+    color: #60941A;
+}
+
+/* Mapas Coleta */
+.text_mapas{
+    margin: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #60941A;
+}
+
+.text_mapas h1{
+    font-size: 40px;
+}
+
+.text_mapas h3{
+    font-size: 15px;
+    margin-top: 2%;
+    color: #4b4b4b;
+}
+
+.text_mapas p {
+    font-size: 30px;
+    color: #60941A;
+}
+
+.mapas{
+    margin-bottom: 3%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+iframe{
+    border-radius: 10px;
+    box-shadow: 12px 5px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* Imagem Da Coleta */
+.img_coleta{
+    margin-top: -20vh;
+    margin-left: -25vh;
+}
+
+/*Abree e Coleta Americana*/
+.abree{
+    max-width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.textos_abree{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.textos_abree h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #60941A;
+}
+
+.textos_abree p{
+    width: 50vw;
+    margin: 3% auto;
+    text-align: center;
+    font-weight: 700;
+    color: #4b4b4b;
+}
+
+.abree button{
+    margin: 0 46.5vw;
+    height: 50px;
+    width: 100px;
+    background-color: #60941A;
+    border: #60941A;
+    border-radius: 10px;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.20);
+    color: #E7E7E7;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.abree button:hover{
+    transition: 0.2s;
+    color: #60941A;
+    border: #E7E7E7;
+    background-color:#E7E7E7;
+}
+
+.img_regiao{
+    margin-top: -50vh;
+    margin-left: 170vh;
+} 
+
+/*Samsung*/
+.samsung{
+    max-width: 100%;
+    height: 45vh;
+    margin: 0 auto;
+}
+
+.texto_samsung{
+    width: 60vw;
+    margin: -5% auto;
+}
+
+.texto_samsung h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #60941A;
+}
+
+.texto_samsung p{
+    width: 50vw;
+    margin: 3% auto;
+    text-align: center;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+.samsung button{
+    margin: 0 27vw;
+    height: 50px;
+    width: 100px;
+    background-color: #60941A;
+    border: #60941A;
+    border-radius: 10px;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.20);
+    color: #E7E7E7;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.samsung button:hover{
+    transition: 0.2s;
+    color: #60941A;
+    border: #E7E7E7;
+    background-color:#E7E7E7;
+}
+
+.img_planet {
+    margin: -30vh -10vh;
+    max-width: 100%;
+    height: auto;
+}
+
+.componentes{
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.texto_componentes{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.texto_componentes h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2%;
+    color: #60941A;
+}
+
+.texto_componentes p{
+    margin: 3%;
+    text-align: center;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #60941A;
+    text-align: center;
+    height: 7vh;
+}

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+body{
+    background-color: #E7E7E7;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NavBar */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100vw;
+    height: 4rem;
+    background-color: #5f941a00;
+}
+
+nav img{
+    width: 100%;
+    height: 100%;
+    margin-left: -60%;
+}
+
+nav a{
+    margin-right: 1%;
+    width: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+nav a:hover{
+    transition: 0.2s;
+    color: #60941A;
+}
+
+/* Conteúdo */
+main h1{
+    text-transform: uppercase;
+    color:#60941A;
+    text-align: center;
+    margin: 3vh;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 1250px;
+    max-width:  100%;
+    margin: 50px auto 0;
+    border-radius: 10px;
+}
+
+.filter{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+    row-gap: 10px;
+}
+.filter .item{
+    background-color: #fff;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin: 0 auto;
+    padding: 3px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.filter .full-width{
+    grid-column: span 3;
+}
+
+.filter .item:not(.full-width){
+    grid-column: span 1; 
+}
+
+.filter{
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.filter .item select, .filter .item input, .filter .item button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    outline: none;
+}
+
+.filter .item label{
+    display: block;
+    width: 40%;
+    padding: 0 10px;
+}
+
+.filter .item.submit{
+    grid-column: span 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter .item.submit button{
+    border-radius: 10px;
+    background-color: #60941A;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+.countResults{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+
+#list{
+    padding: 20px;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: 32.66% 32.66% 32.66%;
+    row-gap: 10px;
+}
+
+#list .item img{
+    width: 90%;
+    height:300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#list .item{
+    color: #60941A;
+    text-transform: uppercase;
+    background-color: #fff5;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#list .item .title{
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#list .item .price{
+    color: #4b4b4b;
+    letter-spacing: 1px;
+}
+
+.informacao{
+    font-size: smaller;
+}
+
+/* Modal Categoria */
+#modal {
+    width: 800px;
+    height: 300px;
+    background-color: #fff;
+    border: 2px #60941A;
+    border-radius: 5px;
+    padding: 20px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+#modal .close{
+    margin: 1% auto;
+    padding: 0.5vh;
+    border-radius: 8px;
+    border: 2px solid #60941A;
+    background-color: #60941A;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+    transition:all 0.5s;
+}
+
+.btn-view{
+    margin: 4% auto;
+    padding: 0.5vh;
+    border-radius: 8px;
+    border: 2px solid #60941A;
+    background-color: #60941A;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+    transition:all 0.5s;
+}
+
+.btn-view:hover{
+    transition: 0.5s;
+    color: #60941A;
+    border: transparent;
+    background-color: #ece9e9;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #60941A;
+    text-align: center;
+    height: 7vh;
+}
+
+/* Tela Responsiva */
+@media screen and (min-width: 768px) {
+    .filter{
+        grid-template-rows: repeat(2, auto); 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .filter .full-width{
+        grid-column: span 3; 
+    }
+
+    .filter .item:nth-child(2), .filter .item:nth-child(3), .filter .item:nth-child(4){
+        grid-column: span 1; 
+        grid-row: 1; /
+    }
+
+    .filter .item:nth-child(5), .filter .item:nth-child(6), .filter .item.submit {
+        grid-column: span 1; 
+        grid-row: 2; 
+    }
+}
